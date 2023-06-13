@@ -10,7 +10,7 @@ using namespace std;
 void draw() //den pairnei orismata
 {
 	Movie* mymovie = Movie::getInstance();
-		
+
 	mymovie->draw(); //idio me . alla se pointer
 }
 
@@ -28,7 +28,7 @@ int main(int argc, char* argv)
 	Movie* movie = Movie::getInstance();
 
 	graphics::setCanvasSize(CANVAS_WIDTH, CANVAS_HEIGHT);
-	graphics::setCanvasScaleMode(graphics::CANVAS_SCALE_STRETCH);
+	graphics::setCanvasScaleMode(graphics::CANVAS_SCALE_FIT);
 
 	graphics::setDrawFunction(draw); //tha kalountai
 	graphics::setUpdateFunction(update); //se kathe kare
